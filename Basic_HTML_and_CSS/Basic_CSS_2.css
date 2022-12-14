@@ -5,4 +5,8 @@ p
 	font-weight; bold:
 	text-align: center;
 }
+h1 {
+  text-shadow: 1px 1px #FF0000;
+}
+
 /* This is how to leave comments when writing CSS */
