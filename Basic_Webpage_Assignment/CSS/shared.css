@@ -21,7 +21,6 @@ nav {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
 }
 
 h1 {
@@ -66,7 +65,6 @@ p {
     font-weight: 300;
     line-height: 30px;
     padding-bottom: 15px;
-    text-align: center;
 }
 
 .text-center {
@@ -138,7 +136,7 @@ section {
 }
 
 #home {
-    background: url (../image/background.jpg) no repeat 50% 50%;
+    background: url(../image/Thumbnail/background.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -148,7 +146,7 @@ section {
     display: block;
     height: auto;
     padding-top: 350;
-    padding-bottom: 500px;
+    padding-bottom: 50px;
     color: #fff;
 }
 
