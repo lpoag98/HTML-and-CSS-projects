@@ -131,12 +131,12 @@ section {
     margin: 0% auto;
     content: " ";
     width: 100%;
-    position: 100;
+    position: fixed;
     z-index: 100;
 }
 
 #home {
-    background: url(../image/Thumbnail/background.jpg) no-repeat 50% 50%;
+    background: url(../Images/Thumbnail/background.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -146,7 +146,7 @@ section {
     display: block;
     height: auto;
     padding-top: 350;
-    padding-bottom: 50px;
+    padding-bottom: 500px;
     color: #fff;
 }
 
@@ -155,7 +155,7 @@ section {
     font-variant: small-caps;
     color: #fff;
     letter-spacing: 5pt;
-    word-spacing: 5pt;
+    word-spacing: 21pt;
     font-size: 4.5em;
     text-align: left;
     font-family: impact, sans-serif;
