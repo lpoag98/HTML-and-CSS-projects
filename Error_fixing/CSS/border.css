@@ -1,4 +1,4 @@
 .border {
     border: 2px dashed #ff0000;
-    border-radius: 1px;
+    z-index: 100;
 }
