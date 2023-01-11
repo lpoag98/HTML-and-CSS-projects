@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/shared.css">
 		<link rel="stylesheet" type="text/css" href="./css/animations.css">
+		<link rel="stylesheet" type="text/css" href="./css/lightbox.css">
 	</head>
 <body>
 <!-- NAV -->
@@ -39,7 +40,7 @@
 			<div class="photo-container">
 				<div class="photo">
 					<img src="./images/thumbnail/thumbnail_1.png" alt="Picture of Dystopian future" width="400" height="400">
-					<div class="photo-overlay">
+					<div class="photo-overlay" onclick="openModal();currentSlide(1)">
 						<h3 class="white-head">Click to Enlarge</h3>
 						<p>String Used</p>
 					</div>
@@ -51,7 +52,7 @@
 			<div class="photo-container">
 				<div class="photo">
 					<img src="./images/thumbnail/thumbnail_2.png" alt="City among the trees" width="400" height="400">
-					<div class="photo-overlay">
+					<div class="photo-overlay" onclick="openModal();currentSlide(2)>
 						<h3 class="white-head">Click to Enlarge</h3>
 						<p>String Used</p>
 					</div>
@@ -63,7 +64,7 @@
 			<div class="photo-container">
 				<div class="photo">
 					<img src="./images/thumbnail/thumbnail_3.png" alt="Sunflower Field" width="400" height="400">
-					<div class="photo-overlay">
+					<div class="photo-overlay" onclick="openModal();currentSlide(3)>
 						<h3 class="white-head">Click to Enlarge</h3>
 						<p>String Used</p>
 					</div>
@@ -75,7 +76,7 @@
 			<div class="photo-container">
 				<div class="photo">
 					<img src="./images/thumbnail/thumbnail_4.png" alt="City on the Ocean" width="400" height="400">
-					<div class="photo-overlay">
+					<div class="photo-overlay" onclick="openModal();currentSlide(4)>
 						<h3 class="white-head">Click to Enlarge</h3>
 						<p>String Used</p>
 					</div>
@@ -87,7 +88,7 @@
 			<div class="photo-container">
 				<div class="photo">
 					<img src="./images/thumbnail/thumbnail_5.png" alt="Dragon Book Cover" width="400" height="400">
-					<div class="photo-overlay">
+					<div class="photo-overlay" onclick="openModal();currentSlide(5)>
 						<h3 class="white-head">Click to Enlarge</h3>
 						<p>String Used</p>
 					</div>
@@ -99,7 +100,7 @@
 			<div class="photo-container">
 				<div class="photo">
 					<img src="./images/thumbnail/thumbnail_6.png" alt="Dog and Boy" width="400" height="400">
-					<div class="photo-overlay">
+					<div class="photo-overlay" onclick="openModal();currentSlide(6)>
 						<h3 class="white-head">Click to Enlarge</h3>
 						<p>String Used</p>
 					</div>
@@ -111,7 +112,7 @@
 			<div class="photo-container">
 				<div class="photo">
 					<img src="./images/thumbnail/thumbnail_7.png" alt="Warrior" width="400" height="400">
-					<div class="photo-overlay">
+					<div class="photo-overlay" onclick="openModal();currentSlide(7)>
 						<h3 class="white-head">Click to Enlarge</h3>
 						<p>String Used</p>
 					</div>
@@ -123,7 +124,7 @@
 			<div class="photo-container">
 				<div class="photo">
 					<img src="./images/thumbnail/thumbnail_8.png" alt="combination" width="400" height="400">
-					<div class="photo-overlay">
+					<div class="photo-overlay" onclick="openModal();currentSlide(8)>
 						<h3 class="white-head">Click to Enlarge</h3>
 						<p>String Used</p>
 					</div>
@@ -135,7 +136,7 @@
 			<div class="photo-container">
 				<div class="photo">
 					<img src="./images/thumbnail/thumbnail_9.png" alt="combination" width="400" height="400">
-					<div class="photo-overlay">
+					<div class="photo-overlay" onclick="openModal();currentSlide(9)>
 						<h3 class="white-head">Click to Enlarge</h3>
 						<p>String Used</p>
 					</div>
@@ -147,6 +148,112 @@
 	</div>
 </section>
 <!--END GALLERY-->
+
+
+
+<!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 9</div>
+		<img src="./images/thumbnail/thumbnail_1.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 9</div>
+		<img src="./images/thumbnail/thumbnail_2.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 9</div>
+		<img src="./images/thumbnail/thumbnail_3.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 9</div>
+		<img src="./images/thumbnail/thumbnail_4.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">5 / 9</div>
+		<img src="./images/thumbnail/thumbnail_5.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">6 / 9</div>
+		<img src="./images/thumbnail/thumbnail_6.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">7 / 9</div>
+		<img src="./images/thumbnail/thumbnail_7.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">8 / 9</div>
+		<img src="./images/thumbnail/thumbnail_8.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">9 / 9</div>
+		<img src="./images/thumbnail/thumbnail_9.png" style="width:100%">
+	  </div>
+	  
+	  <!-- The Modal/Lightbox -->
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  <!-- Next/previous controls -->
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+	  <!-- Caption text -->
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./images/Modal/thumbnail_1.png" onclick="currentSlide(1)" alt="Nature">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/Modal/thumbnail_2.png" onclick="currentSlide(2)" alt="Snow">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/Modal/thumbnail_3.png" onclick="currentSlide(3)" alt="Mountains">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/Modal/thumbnail_4.png" onclick="currentSlide(4)" alt="Lights">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/Modal/thumbnail_5.png" onclick="currentSlide(5)" alt="Lights">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/Modal/thumbnail_6.png" onclick="currentSlide(6)" alt="Lights">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/Modal/thumbnail_7.png" onclick="currentSlide(7)" alt="Lights">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/Modal/thumbnail_8.png" onclick="currentSlide(8)" alt="Lights">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/Modal/thumbnail_9.png" onclick="currentSlide(9)" alt="Lights">
+	  </div>
+	</div>
+  </div>
+<!-- Thumbnail image controls -->
+
 
 
 <!--RSVP 2nd style-->
@@ -188,5 +295,6 @@
 	</footer>	
 </div>
 <!--END FOOTER-->
+<script src="JS/one_page_website.js"></script>
 </body>
 </html>
